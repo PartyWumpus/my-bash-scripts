@@ -14,8 +14,8 @@ then
 fi
 
 file_cleanup() {
-    rm "${file_path}/ffmpeg2pass-0.log"
-    rm "${file_path}/ffmpeg2pass-0.log.mbtree"
+    rm "ffmpeg2pass-0.log"
+    rm "ffmpeg2pass-0.log.mbtree"
 }
 
 trap file_cleanup EXIT
