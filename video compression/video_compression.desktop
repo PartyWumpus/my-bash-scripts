@@ -1,0 +1,23 @@
+[Desktop Entry]
+Type=Service
+#Icon=smiley-shape <- this doesn't set the main icon, I can't tell how you'd do that.
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=video/mp4;
+Actions=compress8mb;compress25mb;compress50mb;
+Encoding=UTF-8
+X-KDE-Submenu=Compress Video
+
+[Desktop Action compress8mb]
+Name=8mb
+Icon=archive
+Exec=konsole -e "/home/wumpus/.local/share/kservices5/ServiceMenus/compress_video_mb.sh" 7 $f
+
+[Desktop Action compress25mb]
+Name=25mb
+Icon=archive
+Exec=konsole -e "/home/wumpus/.local/share/kservices5/ServiceMenus/compress_video_mb.sh" 25 $f
+
+[Desktop Action compress50mb]
+Name=50mb
+Icon=archive
+Exec=konsole -e "/home/wumpus/.local/share/kservices5/ServiceMenus/compress_video_mb.sh" 50 $f
